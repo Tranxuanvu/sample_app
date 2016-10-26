@@ -37,8 +37,8 @@ Rails.application.configure do
     :port => 25,
     :domain => "localhost:3000",
     :authentication => :plain,
-    :user_name => "Tranxuanvu1",
-    :password => "motdenchin_19"
+    :user_name => ENV["sendgrid_username"],
+    :password => ENV["sendgrid_password"]
   }
 
   # config.action_mailer.delivery_method = :letter_opener
